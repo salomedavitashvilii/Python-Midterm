@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    /* background-color: #cce6ff; */
+    background-color: #ffcccc;
+    /* max-width: 2000px; */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    /* max-width: 600px; */
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #4da6ff;
+}
+
+form {
+    margin-top: 20px;
+    margin-left: -10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333333;
+}
+
+input[type="text"] {
+    width: 98%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    width: 98%;
+    padding: 10px;
+    background-color: #cce6ff;
+    border: none;
+    /* margin-right: -50px; */
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #80bfff;
+    width: 98%;
+    /* margin-left: -50px; */
+    /* margin-right: 50px; */
+}
+
+p {
+    color: #0047b3;
+    font-size: 20px;
+}
+
+.zodiac-image {
+    width: 500px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

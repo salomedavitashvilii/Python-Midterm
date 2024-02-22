@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/styles/styles.css">
+    <title>Zodiac Sign</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Zodiac Sign Calculator</h1>
+        <!-- მომხმარებლის მონაცემების შესაყვანად არსებული ველი -->
+        <form action="/" method="post"> 
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name">
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" name="last_name">
+            <label for="date_of_birth">Date of Birth (mm/dd/yyyy):</label>
+            <input type="text" id="date_of_birth" name="date_of_birth">
+            <input type="submit" value="Submit">
+        </form>
+        <!-- // შევამოწმოთ რაიმე შეცდომა ხომ არაა და თუ ასეა, გავუშვათ ერორის სმს... -->
+        {% if error_message %} 
+        <p class="error">{{ error_message }}</p>
+        {% endif %}
+        <!-- //ვამოწმებთ რომ ნამდვილად არსებობს მისალმების ტექსტი... -->
+        {% if greeting %} 
+        <!-- //პარაგრაფი მისალმების ტექსტისთვის... -->
+        <p>{{ greeting }}</p> 
+        {% endif %}
+        <!-- // ამ ლოგიკური ოპერაციით ვამოწმებთ ფოტოს არსებობას -->
+        {% if zodiac_image %} 
+        <img src="{{ zodiac_image }}" alt="Zodiac Sign Image" class="zodiac-image">
+        {% endif %}
+    </div>
+</body>
+
+</html>
